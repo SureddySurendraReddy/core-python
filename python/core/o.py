@@ -1,5 +1,11 @@
 from functools import reduce
+#l=[[1,2],[3,4],[5,6]]
+#r=list(map(lambda x:x+5,l))
+#print(r)
 
+
+
+#6th q
 # v="AEIOUaeiou"
 # st=list(filter(lambda x:x not in v, input()))
 # print(st)
@@ -55,3 +61,19 @@ from functools import reduce
 #r=list(map(lambda x:x.append(10),n))
 #print("r",r)
 #print("n",n)
+
+#methods
+class profile:
+    def __init__(self,username):
+        self.followers=0
+        self.username=username
+    def follow(self):
+        print("someone followed you")
+        self.followers+=1
+    def update_username(self,new):
+        self.username=new
+p1=profile("s.surendra_07")
+p1.follow()
+print(p1.followers)
+p1.update_username("vijaya")
+print(p1.username)
